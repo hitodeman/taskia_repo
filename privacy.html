@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー - Taskia</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif;
+      line-height: 1.8;
+      color: #333;
+      background: #fafafa;
+      padding: 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    h1 { font-size: 1.8em; margin-bottom: 8px; color: #1a1a1a; }
+    h2 { font-size: 1.2em; margin-top: 28px; margin-bottom: 8px; color: #1a1a1a; }
+    h3 { font-size: 1.05em; margin-top: 16px; margin-bottom: 6px; color: #444; }
+    p, li { font-size: 0.95em; margin-bottom: 8px; }
+    ul { padding-left: 1.5em; margin-bottom: 12px; }
+    .updated { color: #888; font-size: 0.85em; margin-bottom: 24px; }
+    a { color: #6C63FF; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    th, td { text-align: left; padding: 10px 12px; border: 1px solid #e0e0e0; font-size: 0.9em; }
+    th { background: #f5f5f5; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新日: 2026年3月29日</p>
+
+    <p>本プライバシーポリシー（以下「本ポリシー」）は、[あなたの名前またはチーム名]（以下「当方」）が提供するモバイルアプリケーション「Taskia」（以下「本アプリ」）における個人情報およびデータの取り扱いについて説明するものです。</p>
+
+    <h2>1. 収集する情報</h2>
+
+    <h3>1.1 自動的に収集される情報</h3>
+    <table>
+      <tr>
+        <th>データの種類</th>
+        <th>目的</th>
+        <th>保存先</th>
+      </tr>
+      <tr>
+        <td>デバイス識別子（UUID）</td>
+        <td>端末の識別、API利用制限</td>
+        <td>端末内（セキュアストレージ）</td>
+      </tr>
+      <tr>
+        <td>匿名認証トークン</td>
+        <td>サービス認証</td>
+        <td>端末内 / Supabase</td>
+      </tr>
+      <tr>
+        <td>サブスクリプション状態</td>
+        <td>Pro機能の提供</td>
+        <td>RevenueCat</td>
+      </tr>
+    </table>
+
+    <h3>1.2 お客様が入力する情報</h3>
+    <table>
+      <tr>
+        <th>データの種類</th>
+        <th>目的</th>
+        <th>保存先</th>
+      </tr>
+      <tr>
+        <td>タスクデータ（タイトル、期日、メモ等）</td>
+        <td>タスク管理機能の提供</td>
+        <td>端末内（SQLite）</td>
+      </tr>
+      <tr>
+        <td>カテゴリ・タグ情報</td>
+        <td>タスクの整理</td>
+        <td>端末内（SQLite）</td>
+      </tr>
+      <tr>
+        <td>通知設定</td>
+        <td>リマインダーの配信</td>
+        <td>端末内（SQLite）</td>
+      </tr>
+    </table>
+
+    <h3>1.3 AI 機能利用時に送信される情報</h3>
+    <p>AI タスク抽出機能を使用する際、お客様が入力したテキストがサーバー（Supabase Edge Functions）に送信され、OpenAI の API を通じて処理されます。この際、個人を特定する情報は意図的に収集しません。</p>
+
+    <h2>2. 収集しない情報</h2>
+    <p>本アプリは以下の情報を収集しません。</p>
+    <ul>
+      <li>氏名、メールアドレス、電話番号等の個人情報</li>
+      <li>位置情報</li>
+      <li>連絡先、写真、カメラへのアクセス</li>
+      <li>広告目的のトラッキングデータ</li>
+    </ul>
+
+    <h2>3. 第三者サービスの利用</h2>
+    <p>本アプリは以下の第三者サービスを利用しています。各サービスは独自のプライバシーポリシーに基づいてデータを処理します。</p>
+
+    <table>
+      <tr>
+        <th>サービス名</th>
+        <th>用途</th>
+        <th>プライバシーポリシー</th>
+      </tr>
+      <tr>
+        <td>Supabase</td>
+        <td>認証・サーバー処理</td>
+        <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>RevenueCat</td>
+        <td>サブスクリプション管理</td>
+        <td><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>OpenAI</td>
+        <td>AI タスク抽出</td>
+        <td><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>Apple App Store</td>
+        <td>アプリ配信・課金</td>
+        <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/privacy</a></td>
+      </tr>
+      <tr>
+        <td>Google Play Store</td>
+        <td>アプリ配信・課金</td>
+        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
+      </tr>
+    </table>
+
+    <h2>4. データの保存と管理</h2>
+    <ul>
+      <li>タスクデータ等のユーザーコンテンツは主にお客様の端末内（SQLite データベース）に保存されます。</li>
+      <li>AI タスク抽出時に送信されるテキストは処理完了後、当方のサーバーに保持されません。</li>
+      <li>匿名認証情報は Supabase のサーバーに保存されます。</li>
+      <li>サブスクリプション情報は RevenueCat のサーバーに保存されます。</li>
+    </ul>
+
+    <h2>5. データの削除</h2>
+    <p>お客様は以下の方法でデータを削除できます。</p>
+    <ul>
+      <li><strong>端末内データ</strong>: 本アプリをアンインストールすることで、端末内に保存されたすべてのデータが削除されます。</li>
+      <li><strong>サーバー上のデータ</strong>: 匿名認証に関するデータの削除をご希望の場合は、下記の連絡先までお問い合わせください。</li>
+    </ul>
+
+    <h2>6. お子様のプライバシー</h2>
+    <p>本アプリは13歳未満のお子様を対象としたサービスではありません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+
+    <h2>7. セキュリティ</h2>
+    <p>当方は、お客様のデータを保護するために合理的な技術的・組織的措置を講じています。デバイス識別子はセキュアストレージに暗号化して保存され、サーバーとの通信はすべて暗号化（HTTPS）されています。ただし、インターネットを通じたデータ転送や電子的保存方法について、100%の安全性を保証することはできません。</p>
+
+    <h2>8. ポリシーの変更</h2>
+    <p>当方は本ポリシーを随時更新する場合があります。重要な変更がある場合は、本ページの更新およびアプリ内での通知により、お客様にお知らせします。変更後の本ポリシーは、本ページに掲載された時点で効力を生じます。</p>
+
+    <h2>9. お問い合わせ</h2>
+    <p>本ポリシーに関するご質問やデータ削除のご依頼は、以下までご連絡ください。</p>
+    <p>メール: <a href="mailto:[連絡先メールアドレス]">[連絡先メールアドレス]</a></p>
+  </div>
+</body>
+</html>
